@@ -577,7 +577,195 @@ mjx-c.mjx-c31::before {
   padding: 0.666em 0.5em 0 0;
   content: "1";
 }
-</style></head><body><p style="display: none;">Just chekcing that no SEO is included.</p>
+</style>
+
+
+<style>
+
+---
+---
+.projects-section {
+    padding: 30px 5px;
+    margin-top: 30px;
+    background-color: var(--light-grey-blue);
+    margin-bottom: 0px;
+    box-shadow: inset 0 0 1px 0px var(--very-dark-color);
+}
+
+.projects-section > h2 {
+    text-align: center
+}
+
+.projects-list {
+    // border-top: 1px solid black;
+    list-style: none;
+    margin-top: 20px;
+    margin-left: 0;
+}
+
+.project-item {
+    // padding: 10px;
+    // border: 1px solid black;
+    margin-top: 40px;
+    display: flex;
+}
+
+.project-title {
+    display: flex;
+    // justify-content: center;
+    align-items: center;
+}
+
+.project-title h3 {
+    margin-bottom: 0;
+    // color: #1e90ff;
+}
+
+.project-title a,
+.project-title a:hover,
+.project-title a:visited {
+    text-decoration: none;
+    color: #111;
+}
+
+.project-title a:hover {
+    color: #1e90ff;
+}
+
+.project-image {
+    margin: 20px;
+    margin-left: 0;
+    margin-top: 0px;
+    min-width: 100px;
+}
+
+.project-image img {
+    width: 100px;
+    border: 1px solid #2c3e50;
+    padding: 3px;
+    border-radius: 1px;
+}
+
+.project-image img:hover {
+    border-color: #1e90ff;
+}
+
+.project-content {
+    margin-left: 10px;
+}
+
+.project-authors {
+    font-style: italic;
+    margin-bottom: 5px;
+    // color: #1e90ff;
+    font-size: 0.9em;
+}
+
+.project-conf-label {
+    margin-left: 10px;
+    color: white;
+    border-radius: 3px;
+    padding: 2px 8px;
+    margin-bottom: 0px;
+}
+
+.project-conf-label.in-proceedings {
+    background-color: #34495e;
+}
+
+.project-conf-label.preprint {
+    background-color: #95a5a6;
+}
+
+.project-links {
+    margin-top: 20px;
+}
+
+.project-link {
+    border: 1px solid black;
+    padding: 7px 7px;
+    border-radius: 2px;
+}
+
+.project-links .project-link {
+    margin-right: 20px;
+    color: black;
+}
+
+.project-links .project-link:visited {
+    color: black;
+}
+
+.project-links .project-link.inactive {
+    color: gray;
+    border: 1px solid black;
+}
+
+.project-links .project-link:hover:not(.inactive) {
+    background-color: var(--very-dark-color);
+    color: white;
+    transition: 0.2s;
+    text-decoration: none;
+}
+
+.project-links .project-link > i {
+    margin-bottom: -3px;
+}
+
+.project-desc {
+    text-align: justify;
+}
+
+.author-me {
+    border-bottom: 1px solid black;
+    padding: 0px 1px;
+    padding-bottom: 1px;
+}
+
+@import "minima";
+
+@include media-query($on-palm) {
+    .project-item {
+        flex-direction: column;
+    }
+
+    .project-item:not(:last-child) {
+        margin-bottom: 100px;
+    }
+
+    .project-image {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .project-links {
+        text-align: center;
+    }
+
+    .project-title {
+        // flex-direction: column;
+        display: block;
+        // justify-content: flext-start;
+    }
+
+    .project-title h3 {
+        display: inline;
+        // font-size: 1.1em;
+    }
+
+    .project-conf-label {
+        // margin-left: 0;
+        // display: inline-block;
+        display: inline;
+    }
+}
+
+
+
+</style>
+
+
+</head><body><p style="display: none;">Just chekcing that no SEO is included.</p>
     <!-- No favicon --><link rel="stylesheet" href="./pgrf-website_files/main.css">
 
 
@@ -618,6 +806,16 @@ mjx-c.mjx-c31::before {
     <a class="project-link" href="https://github.com/rethinking-3d-gans/code" target="_blank">
         <i class="fab fa-fw fa-lg fa-github"></i>
         Code
+    </a>
+
+    <a class="project-link" href="https://www.dropbox.com/s/078gy1govyyoye9/plants_256.zip?dl=0" target="_blank">
+        <i class="fas fa-images"></i>
+        M-Plants
+    </a>
+
+    <a class="project-link" href="https://www.dropbox.com/s/lekkx0agd4fjaaa/food_256.zip?dl=0" target="_blank">
+        <i class="fas fa-images"></i>
+        M-Food
     </a>
 
 
